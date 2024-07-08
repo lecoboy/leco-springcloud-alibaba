@@ -13,6 +13,8 @@ server:
   port: 8070
 dubbo:
   cloud:
+    # 订阅服务列表，默认*代表订阅所有服务，比较浪费内存，可以根据需要填写订阅哪些服务，多个服务用,隔开。
+    # user-provider目前没有需要订阅的服务，可暂时留空。
     subscribed-services:
   protocol:
     name: dubbo
